@@ -1,4 +1,5 @@
 {
+"display_override": ["window-controls-overlay"], 
   "name": "Contador Jubilación",
   "short_name": "Jubilación",
   "description": "Aplicación para calcular el tiempo restante hasta la jubilación.",
@@ -52,5 +53,10 @@
     }
   ],
 
-  "protocol_handlers": []
+  "protocol_handlers": [
+    {
+      "protocol": "web+contador",
+      "url": "./?source=%s"
+    }
+  ]
 }
