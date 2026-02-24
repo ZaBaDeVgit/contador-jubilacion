@@ -1,10 +1,15 @@
 {
   "name": "Contador Jubilación",
   "short_name": "Jubilación",
+  "description": "Aplicación PWA para calcular y visualizar el tiempo restante hasta la jubilación de forma clara y rápida.",
   "start_url": ".",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#2b5797",
+  "lang": "es-ES",
+
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -29,6 +34,24 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Abrir contador",
+      "short_name": "Contador",
+      "url": "./",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
