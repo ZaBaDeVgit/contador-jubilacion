@@ -1,0 +1,52 @@
+═══════════════════════════════════════════════════════════════
+              MI JUBILACIÓN - ZaBaDeV 2026
+═══════════════════════════════════════════════════════════════
+
+📁 ARCHIVOS CREADOS:
+  • MiJubilacion.exe      - Ejecutable para Windows
+  • index.html            - Aplicación principal
+  • app.hta               - Versión alternativa para Windows
+  • *.css, *.js           - Archivos de la app
+
+═══════════════════════════════════════════════════════════════
+
+🚀 CÓMO USAR EN WINDOWS:
+
+  Opción 1 - Ejecutable:
+    → Ejecuta "MiJubilacion.exe"
+    → Se abrirá automáticamente en tu navegador
+
+  Opción 2 - Directo:
+    → Haz doble clic en "index.html"
+
+═══════════════════════════════════════════════════════════════
+
+📱 CÓMO USAR EN ANDROID:
+
+  Opción 1 - Instalar como App (PWA):
+    1. Envía todos los archivos a tu móvil
+    2. Instala una app servidor como "HTTP Server" 
+       o "Web Server for Chrome"
+    3. Ejecuta el servidor y accede a tu IP local
+    4. En Chrome Android, selecciona:
+       → Menú → "Añadir a pantalla de inicio"
+    5. ¡Listo! Se instalará como una app nativa
+
+  Opción 2 - APK Online:
+    1. Sube los archivos a GitHub Pages o Netlify
+    2. Ve a: https://pwabuilder.com
+    3. Introduce tu URL
+    4. Descarga el APK generado
+
+═══════════════════════════════════════════════════════════════
+
+✨ CARACTERÍSTICAS:
+  ✓ Contador: Años, Días, Horas, Minutos, Segundos
+  ✓ Estadísticas: Años/Días/Horas/Minutos totales
+  ✓ Progreso laboral
+  ✓ Diseño moderno con animaciones
+  ✓ Funciona sin internet (PWA)
+
+═══════════════════════════════════════════════════════════════
+
+💼 Creado por ZaBaDeV © 2026

@@ -1,0 +1,27 @@
+{
+    "name": "Mi Jubilación - ZaBaDeV",
+    "short_name": "Jubilación",
+    "description": "Contador regresivo para mi jubilación - 12 de Mayo de 2039",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0f23",
+    "theme_color": "#1a1a2e",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%230f0f23' width='192' height='192' rx='40'/><text x='96' y='130' font-size='100' text-anchor='middle'>🏖️</text></svg>",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%230f0f23' width='512' height='512' rx='100'/><text x='256' y='350' font-size='280' text-anchor='middle'>🏖️</text></svg>",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["lifestyle", "utilities"],
+    "lang": "es",
+    "dir": "ltr"
+}

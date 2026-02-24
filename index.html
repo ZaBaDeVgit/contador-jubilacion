@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta name="description" content="Contador regresivo para mi jubilación - ZaBaDeV 2026">
+    <title>Mi Jubilación 💼</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏖️</text></svg>">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">🏖️</div>
+            <h1>Mi Jubilación</h1>
+            <p class="subtitle">12 de Mayo de 2039</p>
+        </header>
+
+        <main>
+            <div class="countdown-container">
+                <div class="time-unit" data-unit="years">
+                    <span class="number" id="years">0</span>
+                    <span class="label">Años</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit" data-unit="days">
+                    <span class="number" id="days">0000</span>
+                    <span class="label">Días</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit" data-unit="hours">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit" data-unit="minutes">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-unit" data-unit="seconds">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Segundos</span>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card" onclick="showDetail('years')">
+                    <div class="stat-icon">🎉</div>
+                    <div class="stat-value" id="totalYears">0</div>
+                    <div class="stat-label">Años Totales</div>
+                </div>
+                <div class="stat-card" onclick="showDetail('days')">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-value" id="totalDays">0000</div>
+                    <div class="stat-label">Días Totales</div>
+                </div>
+                <div class="stat-card" onclick="showDetail('hours')">
+                    <div class="stat-icon">⏰</div>
+                    <div class="stat-value" id="totalHours">0000</div>
+                    <div class="stat-label">Horas Totales</div>
+                </div>
+                <div class="stat-card" onclick="showDetail('minutes')">
+                    <div class="stat-icon">🕐</div>
+                    <div class="stat-value" id="totalMinutes">0000</div>
+                    <div class="stat-label">Minutos Totales</div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Progreso</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p class="progress-text" id="progressText">del tiempo laboral completado</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Creado por <strong>ZaBaDeV</strong> &copy; 2026</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle">Detalle</h2>
+            <p class="modal-value" id="modalValue">0</p>
+            <p class="modal-label" id="modalLabel">días restantes</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('SW registered'))
+                .catch(err => console.log('SW error:', err));
+        }
+    </script>
+</body>
+</html>
